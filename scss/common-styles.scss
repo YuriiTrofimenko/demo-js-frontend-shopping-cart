@@ -1,0 +1,31 @@
+$main_blue: #6ebbd3;
+@mixin burger-icon-close {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+@mixin hover-color-main {
+  color: $main_blue;
+}
+.toaster {
+  &--hidden {
+    position: fixed;
+    background-color: #6ebbd3;
+    color: white;
+    padding: 0.6em 1em;
+    top: 20px;
+    font-weight: 400;
+    right: -190px;
+    border-radius: 5px;
+    border: 1px solid #57a7bf;
+    z-index: 60;
+  }
+  &--active {
+    top: 20px;
+    right: 20px;
+  }
+}

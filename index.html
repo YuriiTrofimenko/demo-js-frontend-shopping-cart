@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoes</title>
+    <link rel="icon" type="image/svg" href="assets/icons/cat.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="back-on-top"></div>
+    <div class="modal-window-hidden hide-modal-window">
+      <div class="modal-window-hidden__cart-wrap">
+        <div class="modal-window-hidden__cart">
+          <div class="modal-window-hidden__header">A gift for you!</div>
+          <div class="modal-window-hidden__content">
+            Subscribe to our newsletter!
+          </div>
+          <div class="modal-winfdow-hidden__icon-warp">
+            <img
+              src="assets/icons/gift.svg"
+              alt=""
+              class="modal-window-hidden__icon"
+            />
+          </div>
+
+          <div class="modal-window-hidden__subscribe">Subscribe</div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="burger-menu" id="nav-burger">
+          <div class="burger__icon--close" id="burgerClose">
+            <i class="fas fa-times"></i>
+          </div>
+          <ul class="burger-menu__items">
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </div>
+        <div class="header__content">
+          <div class="logo">
+            <img class="logo__img" src="assets/logo/logo.svg" alt="" />
+          </div>
+          <div class="burger-icon__wrap--open" id="burgerOpen">
+            <img
+              class="burger-icon--open"
+              src="assets/icons/humburger-menu.svg"
+              alt=""
+            />
+          </div>
+          <nav>
+            <ul class="header__menu">
+              <li>
+                <a href="#">Main</a>
+              </li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Profile</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__slogan">
+            <span>Get your pair of shoes!</span>
+            <div>Bay it now!</div>
+          </div>
+          <div class="header__shopping-cart">
+            <div class="header__shopping-cart-products-on-cart"></div>
+          </div>
+        </div>
+        <div class="header__tittle" id="mainTittle"></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="navigation-bar__top">
+          <div class="sort-by">
+            <span>Sort by:</span>
+            <div class="sort-by__price" id="sort-by-price" data-filter="price">
+              Price
+              <div id="by-price-chevron" class="fas fa-chevron-down"></div>
+            </div>
+
+            <div
+              class="sort-by__rating"
+              id="sort-by-rating"
+              data-filter="rating"
+            >
+              Rating
+
+              <div id="by-rating-chevron" class="fas fa-chevron-down"></div>
+            </div>
+            <div class="sort-by--reset-all">Reset all filters</div>
+          </div>
+
+          <div class="modal-window__button">Get your gift!</div>
+        </div>
+
+        <div id="products-list"></div>
+        <div class="load-more" id="load-more">
+          <span>Load another 20 items</span>
+          <br />
+          <div class="load-more__items-left">so</div>
+        </div>
+        <section class="promo">
+          <div class="promo__title">
+            <h1>Hurry up to buy!</h1>
+            <p>Subscribe now <br />and get all promotions!</p>
+          </div>
+          <div class="promo__form">
+            <form action="" id="form">
+              <input
+                class="promo__form-email"
+                type="email"
+                placeholder="Email"
+                id="email"
+              />
+              <input
+                class="promo__form-button"
+                type="submit"
+                value="Subscribe"
+                id="submit"
+              />
+
+              <div class="promo__form-subscribe">
+                <input type="checkbox" id="news" />
+                <label for="news">Subscribe for the news latters</label>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+      <div></div>
+    </main>
+    <a href="#back-on-top">
+      <div class="to-top">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+    </a>
+    <div class="toaster--hidden">
+      <div class="toaster__header">Item added to cart!</div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/reactor.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/products-managing.js"></script>
+  </body>
+</html>

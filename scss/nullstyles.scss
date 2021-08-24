@@ -1,0 +1,23 @@
+$main_blue: #6ebbd3;
+html {
+  font-family: Roboto, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: gray;
+  scroll-behavior: smooth;
+}
+body,
+p,
+u {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
